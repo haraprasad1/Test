@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management System</h1>
+
+        <section id="add-employee">
+            <h2>Add New Employee</h2>
+            <form id="add-employee-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="position">Position:</label>
+                <input type="text" id="position" required>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+
+                <label for="salary">Salary:</label>
+                <input type="number" id="salary" required>
+
+                <button type="submit">Add Employee</button>
+            </form>
+        </section>
+
+        <section id="modify-employee">
+            <h2>Modify Existing Employee</h2>
+            <form id="modify-employee-form">
+                <label for="employee-id">Employee ID:</label>
+                <input type="text" id="employee-id" required>
+
+                <label for="new-name">New Name:</label>
+                <input type="text" id="new-name">
+
+                <label for="new-position">New Position:</label>
+                <input type="text" id="new-position">
+
+                <label for="new-department">New Department:</label>
+                <input type="text" id="new-department">
+
+                <label for="new-salary">New Salary:</label>
+                <input type="number" id="new-salary">
+
+                <button type="submit">Modify Employee</button>
+            </form>
+        </section>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
